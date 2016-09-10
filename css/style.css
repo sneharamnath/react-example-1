@@ -31,97 +31,14 @@ h2 > .currency {
     color: #0288D1;
 }
 
-.principal {
-    color: #0288D1;
-}
-
-.interest {
-    color: #EF6C00;
-}
-
-input[type=text] {
-    -webkit-appearance: none;
-    width: 150px;
-    height: 24px;
-    padding: 3px 8px;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #555;
-    border: 1px solid #ccc;
-    border-radius: 2px;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
-table {
-    border-collapse: collapse;
-    font-weight: 300;
-}
-
-th {
-    text-align: right;
-    font-weight: 400;
-}
-
-td {
-    text-align: right;
-    padding: 0 .5rem;
-}
-
-
-
-th,
-td {
-    border: solid 1px #EEEEEE !important;
-    padding: 1px 4px;
-}
-
-label {
+.right{
     display: inline-block;
-    width: 80px;
-    text-align: right;
-    margin-right: 4px;
 }
 
-.content {
-    padding: 20px;
-}
-
-.bar {
-    display: inline-block;
-    border: none;
-    height: 8px;
-}
-
-.bar.principal {
-    background-color: #0288D1;
-    margin-right:.5px;
-}
-
-.bar.interest {
-    background-color: #EF6C00;
-    margin-left:.5px;
-}
-
-.stretch {
-    width: 100%;
-    padding-left:0;
-    padding-right:0;
-}
-
-.flex {
-    display: -webkit-flex;
-    display: flex;
-}
-
-.currency::before {
-    content:"$";
-}
-
-.left {
-    text-align: left;
-}
-
-.form > div {
-    margin: 6px 0;
+.profile-image{
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    height: 50px;
+    width: 50px;
 }
