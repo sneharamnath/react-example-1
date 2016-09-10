@@ -22,44 +22,24 @@ class CandidateList extends React.Component {
             });
         }
         filterCandidates(location, company, searchText) {
-            let loc = [];
-            if(location){
-              if(loc.length > 0){
+            let loc = this.candidates;
+            if (location) {
                 loc = loc.filter((candidate) => {
                     return candidate.current_location === location;
                 });
-              }else{
-                loc = this.candidates.filter((candidate) => {
-                    return candidate.current_location === location;
-                });
-              }
             }
-            if(company){
-              if(loc.length > 0){
+            if (company) {
                 loc = loc.filter((candidate) => {
                     return candidate.current_company === company;
                 });
-              }else{
-                loc = this.candidates.filter((candidate) => {
-                    return candidate.current_company === company;
-                });
-              }
             }
-            if(searchText !== ''){
-              let tempArr = [];
-              if(loc.length > 0){
+            if (searchText !== '') {
+                let tempArr = [];
                 loc.forEach(function(item) {
                     if (item.first_name.toLowerCase().indexOf(searchText) != -1)
-                    tempArr.push(item);
+                        tempArr.push(item);
                 });
                 loc = tempArr;
-              }else{
-                this.candidates.forEach(function(item) {
-                    if (item.first_name.toLowerCase().indexOf(searchText) != -1)
-                      tempArr.push(item);
-                });
-                loc = tempArr;
-              }
             }
             this.setState({
                 candidates: loc
